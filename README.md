@@ -222,20 +222,20 @@
 
 # Tests
 - Testing create user request
-![create()](https://github.com/JoseGutierrezMairn/IETI-LAB1-PART2/blob/master/img/create.PNG?raw=true)   
+![create()](https://github.com/JoseGutierrezMairn/IETI-LAB1/blob/master/img/create.PNG?raw=true)   
 
 - Testing get all users request   
-![getAll()](https://github.com/JoseGutierrezMairn/IETI-LAB1-PART2/blob/master/img/getAll.PNG?raw=true)   
+![getAll()](https://github.com/JoseGutierrezMairn/IETI-LAB1/blob/master/img/getAll.PNG?raw=true)   
 
 - Testing get user by id request
-![getById()](https://github.com/JoseGutierrezMairn/IETI-LAB1-PART2/blob/master/img/getById.PNG?raw=true)   
+![getById()](https://github.com/JoseGutierrezMairn/IETI-LAB1/blob/master/img/getById.PNG?raw=true)   
 
 - Testing update user request
-![update()](https://github.com/JoseGutierrezMairn/IETI-LAB1-PART2/blob/master/img/update.PNG?raw=true)   
+![update()](https://github.com/JoseGutierrezMairn/IETI-LAB1/blob/master/img/update.PNG?raw=true)   
     - Api rest response is an error because the user id does not exist
-	![update fails](https://github.com/JoseGutierrezMairn/IETI-LAB1-PART2/blob/master/img/updateFails.PNG?raw=true)   
+	![update fails](https://github.com/JoseGutierrezMairn/IETI-LAB1/blob/master/img/updateFails.PNG?raw=true)   
 
 - Testing delete user request
-![delete()](https://github.com/JoseGutierrezMairn/IETI-LAB1-PART2/blob/master/img/delete.PNG?raw=true)   
+![delete()](https://github.com/JoseGutierrezMairn/IETI-LAB1/blob/master/img/delete.PNG?raw=true)   
     - Api rest response is an error because the user id does not exist   
-	![delete fails](https://github.com/JoseGutierrezMairn/IETI-LAB1-PART2/blob/master/img/deleteFails.PNG?raw=true) 
+	![delete fails](https://github.com/JoseGutierrezMairn/IETI-LAB1/blob/master/img/deleteFails.PNG?raw=true) 
