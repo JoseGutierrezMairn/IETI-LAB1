@@ -2,6 +2,7 @@ package edu.eci.USERSMICROSERVICERESTFULAPI.controller;
 
 
 import edu.eci.USERSMICROSERVICERESTFULAPI.data.User;
+import edu.eci.USERSMICROSERVICERESTFULAPI.dto.UserDto;
 import edu.eci.USERSMICROSERVICERESTFULAPI.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -33,10 +34,10 @@ public class UserController {
 
 
     @PostMapping
-    public ResponseEntity<User> create( @RequestBody User userDto )
+    public ResponseEntity<User> create( @RequestBody UserDto userDto )
     {
         try {
-            return ResponseEntity.status( HttpStatus.OK ).body( userService.create( userDto ));
+            return ResponseEntity.status( HttpStatus.OK ).body( userService.create( new User( userDto ) ) );
         }catch (Exception e){
             return ResponseEntity.status( HttpStatus.INTERNAL_SERVER_ERROR ).body( null );
         }
@@ -44,10 +45,10 @@ public class UserController {
     }
 
     @PutMapping( "/{id}" )
-    public ResponseEntity<User> update(@RequestBody User userDto, @PathVariable String id )
+    public ResponseEntity<User> update(@RequestBody UserDto userDto, @PathVariable String id )
     {
         try{
-            return ResponseEntity.status( HttpStatus.OK ).body( userService.update( userDto, id ) );
+            return ResponseEntity.status( HttpStatus.OK ).body( userService.update( new User( userDto ), id ) );
         }catch ( Exception e ){
             return ResponseEntity.status( HttpStatus.INTERNAL_SERVER_ERROR ).body( null );
         }
